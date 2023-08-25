@@ -11,10 +11,10 @@ browser = webdriver.Firefox()#("C:\Users\acer_v3\Downloads\geckodriver.exe"')
 m=1
 browser.get('https://webrigada.amocrm.ru')
 time.sleep(2)
-loginAmo = browser.find_element(By.ID,'session_end_login').send_keys('a.gubashev@web-regata.ru')
+loginAmo = browser.find_element(By.ID,'session_end_login').send_keys('login')
 
 time.sleep(2)
-passwordAmo = browser.find_element(By.ID,'password').send_keys('6891313881bB')
+passwordAmo = browser.find_element(By.ID,'password').send_keys('password')
 
 time.sleep(2)
 browser.find_element(By.ID, 'auth_submit').click()
